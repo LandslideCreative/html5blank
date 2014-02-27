@@ -11,10 +11,10 @@ A Wordpress theme from Landslide Creative based on [HTML5 Blank](http://html5bla
 * [NodeJS](http://nodejs.org/)
 
 ### Install Foundation
-[sudo] npm install -g bower grunt-cli
-gem install foundation
+* [sudo] npm install -g bower grunt-cli
+* gem install foundation
 
-### Updating CSS with Sass
+### Updating CSS with Grunt
 Navigate to root folder and enter:
 grunt
 
