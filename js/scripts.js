@@ -1,3 +1,4 @@
+$(document).foundation();
 // DOM Ready
 $(function() {
 
