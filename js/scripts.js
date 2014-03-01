@@ -13,4 +13,7 @@ $(function() {
 		}
 	}
 
+	//FluidVids Init
+	fluidvids.init();
+
 });

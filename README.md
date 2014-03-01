@@ -24,10 +24,16 @@ grunt
 * Project: [github.com/toddmotto/html5blank](https://github.com/toddmotto/html5blank)
 * Website: [html5blank.com](http://html5blank.com)
 * Twitter: [@html5blank](http://twitter.com/html5blank)
-* Author : [Todd Motto](http://toddmotto.com) // [@toddmotto](http://twitter.com/toddmotto)
+* Author : [Todd Motto](http://toddmotto.com)
 
 ### Foundation 5 by Zurb
 * Project: [github.com/zurb/foundation](https://github.com/zurb/foundation)
 * Website: [foundation.zurb.com/](http://foundation.zurb.com/)
 * Twitter: [ZURB](http://www.twitter.com/ZURB)
 * Author: [ZURB, Inc.](http://zurb.com/)
+
+### FluidVids
+* Project: [github.com/toddmotto/fluidvids](https://github.com/toddmotto/fluidvids)
+* Website: [toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/](http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/)
+* Twitter: [@toddmotto](http://twitter.com/toddmotto)
+* Author : [Todd Motto](http://toddmotto.com)
