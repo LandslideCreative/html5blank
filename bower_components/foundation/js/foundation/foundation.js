@@ -538,8 +538,10 @@
       //    Callback (Function): Fundation to execute when image is fully loaded.
       image_loaded : function (images, callback) {
         var self = this,
-            unloaded = images.length;
-
+        unloaded = images.length;
+        if(unloaded == 0){
+            callback(images);
+        }    
         images.each(function(){
           single_image_loaded(self.S(this),function(){
             unloaded -= 1; 
