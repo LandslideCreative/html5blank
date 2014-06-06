@@ -24,7 +24,7 @@ npm install -g grunt-cli
 ### Installation
 1. Rename site in line 2 of *package.json*.
 2. Update line 108 of *functions.php* to *dist/new-site-name.min.js*
-3. Update line 108 of *style* to *dist/new-site-name.min.css*
+3. Update line 13 of *style.css* to *dist/new-site-name.min.css*
 4. Install Bower dependencies for Foundation
 ```
 bower install
