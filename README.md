@@ -4,19 +4,67 @@ A Wordpress theme from Landslide Creative based on [HTML5 Blank](http://html5bla
 
 ## Installation
 
-### System Requirements
-* [Git](http://git-scm.com/)
-* [Sass](http://sass-lang.com/)
-* [Ruby 1.9+](https://www.ruby-lang.org/)
-* [NodeJS](http://nodejs.org/)
+### Requirements
+The following tools are required for this project.
 
-### Install Foundation
-* [sudo] npm install -g bower grunt-cli
-* gem install foundation
++ [Git](http://git-scm.com/)
++ [Ruby](https://www.ruby-lang.org/en/)
++ [Sass](http://sass-lang.com/install)
++ [Node.js](http://nodejs.org/)
++ [npm](https://www.npmjs.org/)
++ [Bower](http://bower.io/)
+```
+npm install -g bower
+```
++ [Grunt CLI](http://gruntjs.com/getting-started)
+```
+npm install -g grunt-cli
+```
 
-### Updating CSS with Grunt
-Navigate to root folder and enter:
+### Installation
+1. Rename site in line 2 of *package.json*.
+2. Update line 108 of *functions.php* to *dist/new-site-name.min.js*
+3. Update line 108 of *style* to *dist/new-site-name.min.css*
+4. Install Bower dependencies for Foundation
+```
+bower install
+```
+5. Install grunt dependencies
+```
+npm install
+```
+
+## Usage Instructions
+
+### Grunt Task Runner
+
+To generate distribution CSS and Javascript and watch, use
+```
 grunt
+````
+
+To regenerate sprites, use
+```
+grunt sprite
+```
+
+### CSS
+
+Custom .scss file is located at */scss/_custom.scss* and is compressed and autoprefixed into */dist/site-name.min.css*
+
+### JavaScript
+
+Files located in the */js/* are automatically concatenated and compressed into */dist/site-name.min.js*
+
+### Sprites
+
+Images used to create sprites are located in */img/sprites/*. Save them at 2x resolution and they will automatically be converted to the correct sizes and added to the .scss files. To use them, use 
+```scss
+.class-for-sprite {
+	@include sprite($name-of-sprite);
+}
+```
+*Note: On Windows, slashes are backwards in the generated .scss files. Use a find and replace in /scss/_sprite-main.scss and /scss/_sprite-main-hd.scss to remedy. The sprites generator also requires [GraphicsMagick](http://www.graphicsmagick.org/) to work so make sure you have installed it.*
 
 ## Open Source Projects Used
 
