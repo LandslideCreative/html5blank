@@ -2,7 +2,7 @@
   "name": "landslide",
   "version": "0.0.1",
   "devDependencies": {
-    "node-sass": "~0.8.6",
+    "node-sass": "~0.9.3",
     "grunt": "~0.4.4",
     "grunt-contrib-concat": "~0.4.0",
     "grunt-contrib-uglify": "~0.4.0",
