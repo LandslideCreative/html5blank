@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/foundation/**/*.js', 'src/js/**/*.js'],
+        src: ['src/foundation/**/*.js', 'src/vendor/**/*.js', 'src/scripts.js'],
         dest: 'dev/<%= pkg.name %>.js'
       }
     },
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
       },
 
       javascript: {
-        files: ['src/foundation/**/*.js', 'src/js/**/*.js'],
+        files: ['src/foundation/**/*.js', 'src/vendor/**/*.js', 'src/scripts.js'],
         tasks: ['concat', 'uglify']
       }
     }
