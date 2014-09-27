@@ -70,7 +70,7 @@ module.exports = function(grunt) {
       },
 
       javascript: {
-        files: 'js/**/*.js',
+        files: ['src/foundation/**/*.js', 'src/js/**/*.js'],
         tasks: ['concat', 'uglify']
       }
     }

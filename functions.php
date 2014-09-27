@@ -91,7 +91,7 @@ function html5blank_nav()
 function html5blank_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
-        wp_register_script('dist-scripts', get_template_directory_uri() . '/dist/landslide.js', array(), '1.0.0'); // Custom scripts
+        wp_register_script('dist-scripts', get_template_directory_uri() . '/dist/the-hermitage.min.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('dist-scripts'); // Enqueue it!
     }
 }

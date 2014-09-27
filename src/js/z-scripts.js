@@ -1,6 +1,6 @@
-$(document).foundation();
-// DOM Ready
-$(function() {
+jQuery(document).ready(function($) {
+
+	$(document).foundation();
 
 	// SVG fallback
 	// toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script#update
