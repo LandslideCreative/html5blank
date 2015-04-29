@@ -2,8 +2,8 @@
 			<footer class="footer" role="contentinfo">
 
 				<p class="copyright">&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.</p>
--					
--			</footer> <!-- .footer -->
+					
+			</footer> <!-- .footer -->
 
 		<?php wp_footer(); ?>
 
