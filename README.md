@@ -43,11 +43,6 @@ To generate distribution CSS and Javascript and watch, use
 grunt
 ````
 
-To regenerate sprites, use
-```
-grunt sprite
-```
-
 ### CSS
 
 Custom .scss file is located at */scss/_custom.scss* and is compressed and autoprefixed into */dist/site-name.min.css*
