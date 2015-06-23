@@ -60,16 +60,6 @@ Files located in the */js/* are automatically concatenated and compressed into *
 
 To allow for modular inclusion of Foundation JS, files located in the */src/foundation/* are automatically concatenated and compressed into */dist/site-name.min.js* as well. This means you may want to move the latest foundation.min.js file from the */bower_components/* folder into the */src/foundation/* folder.
 
-### Sprites
-
-Images used to create sprites are located in */img/sprites/*. Save them at 2x resolution and they will automatically be converted to the correct sizes and added to the .scss files. To use them, use 
-```scss
-.class-for-sprite {
-	@include sprite($name-of-sprite);
-}
-```
-*Note: On Windows, slashes are backwards in the generated .scss files. Use a find and replace in /scss/_sprite-main.scss and /scss/_sprite-main-hd.scss to remedy. The sprites generator also requires [GraphicsMagick](http://www.graphicsmagick.org/) to work so make sure you have installed it.*
-
 ## Open Source Projects Used
 
 ### HTML5 Blank

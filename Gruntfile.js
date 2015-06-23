@@ -37,18 +37,6 @@ module.exports = function(grunt) {
       }
     },
 
-    spriteHD: {
-          options: {
-            destImg: 'img/',
-            destCSS: 'scss',
-            imgUrl: '../img/'
-          },
-          all: {
-            src: ['img/sprites/*.png'],
-            spriteName: 'sprite'
-          }
-      },
-
     autoprefixer: {
       single_file: {
         src: 'dev/<%= pkg.name %>-unprefixed.css',
@@ -78,12 +66,10 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-spritesmith-hd');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
-
-  grunt.registerTask('sprite', ['spriteHD']);
+  
   grunt.registerTask('default', ['sass', 'autoprefixer', 'concat', 'uglify', 'watch']);
 }
