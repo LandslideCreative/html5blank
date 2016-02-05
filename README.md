@@ -47,6 +47,10 @@ grunt
 
 Custom .scss file is located at */scss/_custom.scss* and is compressed and autoprefixed into */dist/site-name.min.css*
 
+### Foundation CSS
+
+The basic Foundation styles are selectively included. Include more features by uncommenting them in */scss/app.scss*
+
 ### JavaScript
 
 Files located in the */js/* are automatically concatenated and compressed into */dist/site-name.min.js*
